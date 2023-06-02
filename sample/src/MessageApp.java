@@ -1,3 +1,7 @@
+// パッケージなし（デフォルトパッケージ）
+
+import item.Drink;
+
 public class MessageApp {
 
     // public:全てのクラスからアクセス可能
@@ -11,5 +15,7 @@ public class MessageApp {
         // print:出力の終わりに改行しない
         System.out.print("私の名前は");
         System.out.print("佐藤です");
+
+        Drink drink;
     }
 }
