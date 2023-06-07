@@ -19,7 +19,7 @@ public class App2 {
         // 宣言の型にArrayListを使うと専用のメソッドが使える
 
         ArrayList<Character> characterList = new ArrayList<Character>();
-        characterList.add(new Wizard("アリス")); // リストへ追加
+        characterList.add(new Wizard("アリス")); // add:リストへ追加
         characterList.add(new Wizard("テリー"));
         characterList.add(new Warrior("ボブ"));
 
@@ -28,24 +28,24 @@ public class App2 {
             System.out.println(character.name);
         }
 
-        int dataCount = characterList.size(); // リストの要素数
+        int dataCount = characterList.size(); // size:リストの要素数
         System.out.println(dataCount);
 
-        Character selectCharacter = characterList.get(1); // インデックス指定の値を取得
+        Character selectCharacter = characterList.get(1); // get:インデックス指定の値を取得
         selectCharacter.status(selectCharacter);
 
-        characterList.set(0, new Warrior("スミス")); // インデックス指定の値を更新
+        characterList.set(0, new Warrior("スミス")); // set:インデックス指定の値を更新
         for (Character character : characterList) {
             System.out.println(character.name);
         }
 
-        characterList.remove(2); // インデックス指定の値を削除
+        characterList.remove(2); // remove:インデックス指定の値を削除
         System.out.println("======== remove ========");
         for (Character character : characterList) {
             System.out.println(character.name);
         }
 
-        characterList.clear(); // 全てのデータを削除
+        characterList.clear(); // clear:全てのデータを削除
         System.out.println("======== clear ========");
         for (Character character : characterList) {
             System.out.println(character.name);
