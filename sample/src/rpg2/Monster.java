@@ -1,15 +1,10 @@
 package rpg2;
 
-public class Monster {
-    public String name;
-    public int hp;
-    public int mp;
-    public int attackPower;
-    public int defencePower;
+public class Monster extends Character {
 
     public Monster(String name) {
-        this.name = name;
-        this.hp = 5;
+        super(name);
+        this.hp = 100;
         this.mp = 0;
         this.attackPower = 5;
         this.defencePower = 1;

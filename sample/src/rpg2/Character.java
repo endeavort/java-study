@@ -59,8 +59,10 @@ public class Character {
     }
 
     public void attack(Character character) {
-        int damage = 5;
-        character.hp -= damage;
-        System.out.println(character + "に" + damage + "のダメージ!");
+        int damage = this.attackPower - character.defencePower;
+        if (damage > 0) {
+            character.hp -= damage;
+        }
+        System.out.println(character.name + "に" + damage + "のダメージ!");
     }
 }
